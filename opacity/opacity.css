@@ -1,0 +1,10 @@
+.center{
+    margin-left: 50%;
+}
+
+#a{
+    opacity: 0.3;
+}
+#a:hover{
+    opacity: 1;
+}

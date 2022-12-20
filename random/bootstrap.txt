@@ -1,0 +1,7 @@
+bootstrap is used for front end ==> only for design ==> currently 5 version
+javascript ==>  ( 80% website soul )
+
+why? 
+    it work on client side
+    because before it It collect all website pages that overcome after javascript that include only collect that website which is asked.
+    

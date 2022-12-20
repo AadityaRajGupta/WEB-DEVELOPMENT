@@ -1,0 +1,28 @@
+.first_gradient{
+    height: 400px;              
+    border: 2px solid red;      
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: linear-gradient(red,green,yellow,gray);
+}
+
+.box{
+    width: 80px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+img{
+    width: 80px;
+    height: 100px;
+    transition: transform .2s;
+}
+
+img:hover{
+    width: 50vh;
+    height: 50vh;
+    transform: scale(1.5);
+}

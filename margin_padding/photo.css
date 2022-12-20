@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div
+{
+    /* margin-top: 25vh; */
+    /* margin-bottom: 25vh; */
+    margin: 25vh 25vw;
+    height: 50vh;
+    width: 50vw;
+    /* border: 2px solid red; */
+}
+img{
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1;
+    transform: rotate(360deg) scale(0.5);
+    transition: 8s ease;
+}
