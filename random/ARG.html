@@ -1,0 +1,323 @@
+<!--
+    ctrl k w ==> browser direct
+Toggle Preview - ctrl+shift+v
+Open Preview to the Side - ctrl+k v
+alt + z ==> word
+Basic completion: Ctrl+Space (for use of css in html)
+Smart type-matching completion: Ctrl+Shift+Space
+
+
+TezJS
+
+    HTML==>Hyper text markup language
+    CSS==> Cascading Style Sheets 
+
+
+!TAGS:   
+!======
+<p> FOR PRAGRAPH</p>
+<u> FOR UNDERLINE</u>
+<b> FOR BOLD </b>
+<i> FOR ITALIC</i>
+<em> FOR ITALIC </em>
+<strong> FOR BOLD </strong>
+<br>       for break
+<big>        </big>
+<small>      </small>
+<hr>    ==Horizontal ruler , used to seperate content
+<sub> subscript <sub/>
+<sup> superscript <sup/>
+<div> BLOCK element(take full width) </div>
+<span> inline element(take width as per size) </span>
+<font size="+3">
+
+*anchor tag : used to add links to your page
+<a href="https://google.com" target="_main"> GOOGLE </a>           target main for opening the website in new tab
+                                                                    replace GOOGLE with any image tag to make it clickable pic
+
+*image tag: to add images to page
+<img src="link aayega yaha" alt="Random Image">            alt== alternate name if image not loaded on site
+
+*pre tag: to display text as it is (without ignoring spaces and next line)
+<pre> </pre>
+
+SIX HEADING TAGS: H1(most important),H2,H3,H4,H5,H6(least important)   
+
+
+
+<header>
+<main>
+<footer>
+
+
+?LIST IN HTML:
+?=============
+lists are used to represent real life list data
+!ORDERED
+<ol>
+    <li>BATHING</li>
+    <li>BREAKFAST</li>
+</ol>
+
+!UNORDERED
+<ul>
+    <li>APPLE</li>
+    <li>MANGO</li>
+</ul>
+
+*TABLES ON HTML  <table>
+*========================
+<tr>    ==>used to diplay table row
+<td>    ==>used to diplay table data
+<th>    ==>used to diplay table header
+<thead>  ==> to wrap table head
+<tbody>   ==> to wrap table body
+<th colspan="3"> NAME </th>     colspan==> kitne column ke bich me aaye
+
+?FORM IN HTML (IMP. TOPIC)
+?=========================
+form are used to collect data from user
+EG:signup/login/contact me
+<form> </form>
+
+    !ACTION IN FORM: action attribute is used to define what action needs to be performed when a form is submitted
+    !===============
+    <form action="/action.php">
+    
+    *FORM ELEMENTS:
+    *==============
+    <input type="text" placeholder="ENTER NAME">
+
+!SELECT:
+!=======
+
+
+<html>
+    <head>
+        <title>MY WEB PAGE </title>
+
+        #INTERNAL SHEET EXAMPLE:
+        ========================
+        <style type="text/css"> 
+            h1{color : red;}    ==> jaha bhi h1 hoga waha red color kar dega
+            p {color : red}   
+            #c1 {color : green}     ==> id selector  like id="c1"
+            .classeg {color: violet}    ==> class selector like class="classeg"
+            h1,h2,p{color : navy}      ==> group selector
+        </style>
+
+    </head>
+
+    <body>
+    <body bgcolor="red">
+    <body background="C:\Users\HP PC\OneDrive\Pictures\Screenshots\wp2471197.jpg">
+        <h1 style="color: red;">  </h1> ==> inline style can be use in paragraph and etc also must be under body| also work without semi colon 
+        <marquee direction="right">HELLO </marquee>      ==>FOR moving text and can set dirction of movement
+        <img src="C:\Users\HP PC\OneDrive\Pictures\Screenshots\Screenshot 2022-03-28 193930.png" width="80px">    INSERT IMAGE
+    </body>
+
+</html>
+ctrl k w ==> browser direct
+===========================================================================================================================================================
+-->
+<!--
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            MY WEB PAGE ARG
+            <style type="text/css">
+                p {color : red}   
+                #c1{color : green}
+                .classeg {color: violet}
+                h1,h2,p{color : navy}
+
+            </style>
+            <link   rel="demo"
+                    href="demo.css"
+                    type="text/css" />
+        </title>
+    </head>
+
+    <body>
+
+        <img src="C:\Users\HP PC\OneDrive\Pictures\Screenshots\Screenshot 2022-03-28 193930.png" width="80px">
+        <marquee direction="right">HELLO </marquee>
+        <h1 style="color: blue;"> <b><u>ARG</u></b> </h1>
+
+        <p id="c1"> WELCOME TO MY WEB PAGE </p>
+    
+        <ol type="a">
+            <li>ARG</li>
+            <li>HELLO</li>
+        </ol>
+
+        <ul type="a">
+            <li>ARG</li>
+            <li>HELLO</li>
+        </ul>
+
+        <h1 class="h1">My First Heading</h1>
+        <p><u>My first paragraph.</u></p>
+        <p>hello</p>
+    </body>
+</html>
+
+
+-->
+
+
+<!DOCTYPE html>
+<!--TELLS THAT WE ARE USING HTML 5-->
+<html lang="en">
+<!--lang=language, en=english-->
+
+<head>
+    <!--META DATA jho desplay nhi hota web page pe-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARG</title>
+</head>
+
+<body>
+    <header>
+        <pre><h1>AADITYA RAJ GUPTA</h1></pre>
+    </header>
+
+    <main>
+        <hr>
+        <section>
+            <p>ABES ENGINEEING COLLEGE | CSE | 3rd SEM</p>
+        </section>
+        <section>
+            <p>Ch. chhabil dass public school | 2021(12th)</p>
+        </section>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_main">BREAK TAG</a>
+        <br />
+        <a href="https://www.hackerrank.com/dashboard"><img
+                src="data:image/jpeg;base64,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"
+                height="50"></a>
+        <hr>
+
+        <ol type="I">
+            <li>BATHING</li>
+            <li>BREAKFAST</li>
+        </ol>
+
+        <!-- <form action="/action.php"> -->
+        <form>
+            <input type="text" placeholder="ENTER USERNAME">
+            <input type="password" placeholder="ENTER PASSWORD">
+            <br>
+            <label for="101">
+                <input type="radio" value="class 1st SEM" name="class" id="101">1st SEMESTER
+            </label>
+            <br />
+            <label for="102">
+                <input type="radio" value="class 2nd SEM" name="class" id="102">2nd SEMESTER
+            </label>
+            <br />
+            <label for="103">
+                <input type="radio" value="class 3rd SEM" name="class" id="103">3rd SEMESTER
+            </label>
+            <br />
+            <br>
+
+
+            <label for="id1">
+                <input type="checkbox" value="class 1st SEM" name="class" id="id1">1st SEMESTER
+            </label>
+            <br />
+            <label for="id2">
+                <input type="checkbox" value="class 2nd SEM" name="class" id="id2">2nd SEMESTER
+            </label>
+            <br />
+            <label for="id3">
+                <input type="checkbox" value="class 3rd SEM" name="class" id="id3">3rd SEMESTER
+            </label>
+            <br />
+            SELECT YOUR CITY:
+            <select name="city" id="city">
+                <option value="delhi">delhi</option>
+                <option value="ghaziabad">ghaziabad</option>
+                <option value="ballia">ballia</option>
+            </select>
+            <br><br>
+            <textarea name="feedback" id="101" placeholder="PLEASE GIVE FEEDBACK" rows="5">FEEDBACK</textarea>
+            <br>
+            <br>
+            <input type="SUBMIT" value="SUBMIT">
+        </form>
+        <div id="id1" class="group1"></div>
+        <div id="id2" class="group2"></div>
+
+        <span>WELCOME</span><br>   <!--for specific width-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n0VNjUNjB-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <video width="560" height="315" src="D:\Downloads\whatsapp downloads\MUSIC VIDEO\[ARIJIT ANAND] - Jawaab Mein Tu Soniye - Lyrical.mp4" controls loop autoplay>SONG</video>
+        <br><br>
+        <!--ALSO can be used by inline name but not advisable-->
+        <a href="D:\2ND YEAR\WEB DEVELOPMENT\arg.html">ARG</a>
+        <br />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStMcA6EIJKFPksLzi5vo45mSCvzLTagL_z_v_LFfNK&s"
+            alt="WELCOME" height="100 " />
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Incidunt consequuntur itaque laudantium recusandae dignissimos,
+            blanditiis ea nisi libero ex at quis architecto vitae inventore
+            ka fugiat hic corrupti distinctio nostrum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta est minima consectetur magnam architecto
+            vero animi voluptatum similique? In iste sint alias ipsa, facilis laudantium esse consectetur maiores nam
+            corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ullam cum a dolores in.
+            Eligendi exercitationem corporis, enim, quibusdam reiciendis beatae rem qui culpa labore itaque, mollitia
+            debitis? Labore, libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eum harum voluptatem
+            rem placeat ipsa, at nostrum nesciunt aut ducimus perferendis provident maxime, eos dolor quaerat fuga
+            reiciendis et magnam.</article>
+        <hr>
+        <p>H<sub>2</sub>O</p>
+
+        <ul>
+            <li>APPLE</li>
+            <ul>
+                <li>COLOR: RED</li>
+                <li>SEASON: WINTER</li>
+            </ul>
+            <li>MANGO</li>
+            <ul>
+                <li>COLOR: YELLOW</li>
+                <li>SEASON: SUMMER</li>
+            </ul>
+        </ul>
+
+        <table border="2" style="color : red">
+
+            <caption>STUDENT BASIC DETAIL </caption>
+            <thead>
+                <tr>
+                    <th colspan="3"> NAME </th>
+                    <!--<th> BRANCH </th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AADITYA</td>
+                    <td>CSE </td>
+                    <td>2022-23</td>
+                </tr>
+            </tbody>
+        </table>
+        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a dolores tempore itaque 
+        quos vero maiores tempora ipsum fuga eum numquam magnam dolorem, quas eius necessitatibus, 
+        amet est fugit temporibus?</pre>
+        <aside>BASICALLY USED FOR ADDS | Systematic way of representation of web page </aside>
+    </main>
+
+    <footer>
+        THANK YOU!!
+    </footer>
+</body>
+
+</html>

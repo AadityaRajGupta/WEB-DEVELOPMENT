@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;       /*isse border bhi box ke size ke andar calculate hoga like here 2px border 80px box ke andar consider hoga bahar nhi*/
+}
+
+/*  container property or parent property:
+
+-> flex-direction
+-> flex-wrap
+-> flex-flow
+-> justify-content
+-> align-items
+-> align-content
+
+==> flex always work on main axis and other axis is called cross axis.
+
+*/
+.container{
+    height: 400px;                  /*   1    */
+    border: 2px solid red;        /*   1    */
+    display: flex;                  /*   3    */
+
+
+    /*flex-direction: column;       /*   4 here we are changing our main axis to column */
+    /* flex-direction: row-reverse;      5 isse flex items right side se fill honge row wise */
+    /* flex-direction: column-reverse;   6 isse flex items bottom side se fill honge column wise */
+
+
+    /* flex-wrap: wrap;                 7 isse boxes shift ho jaenge jaise hi uske specific width se jyada shrink hoga tho downside(inspect karna hoga har bar change samajne ke liye */
+    /* flex-wrap: wrap-reverse;          8 isse boxes wrap hoga lekin upar jaega box */
+    /* flex-wrap: nowrap; */
+
+
+    /* gap: 10px;                      9 if we want to give gap between two child than we use gap and aur isse parent or child ke bich me gap nhi aata hai(margin comment karna hai i.e 2......iss time ke baad agar ye use kara tho uski jarurat nhi hai phir) */
+    /* row-gap: 10px;                    9 two row ke bich me gap aayega */
+    /* column-gap: 10px; */
+
+
+    /*  10 flex flow me dono ake saath use ho sakta hai flex direction or wrap */
+    flex-flow: wrap row;
+
+
+    justify-content: center;           /* main-axis me hi kaam karega justify content */
+    /* justify-content: space-around;   content ke across (left side as well as right side) space kar dega equally pura container me   */
+    /* justify-content: space-between;     extreme left right me space nhi rahega */
+    /* justify-content: flex-start;            saare box right side se set honge like here:1 2 3 4 5 6 7 8             */
+    /* justify-content: flex-end;              saare box right side se set honge like here:             1 2 3 4 5 6 7 8 */
+
+
+    align-items: center;           /* it work on cross axis*/
+    /* align-items: stretch;           this is by default, jho container ke according height le leta hai */
+    /* align-items: flex-start;            saare box top se set honge */
+    /* align-items: flex-end;              saare box bottom se set honge */
+
+
+    align-content: center;      /* jub wrap hoga tub jho gap hota hai do box ke bich me vo hum set kar sakte hai*/
+    /* align-content: flex-end;    har bar inspect karke change dekh lena hai */
+    /* align-content: flex-start; */
+    /* align-content: space-around;
+    align-content: space-between;
+    align-content: stretch; */
+
+}
+
+
+/* box property or flex children property
+
+-> order 
+-> flex-grow
+-> flex-shrink
+-> flex-basis
+-> flex
+-> align-self
+
+
+*/
+.box{
+    border: 2px solid green;        /*  1   */
+    /* margin:10px 0;                     2     margin top and bottom 10px and left right 0 */
+    width: 80px;                      /*  7     ye width de rahe hai box kho or......flex wrap karne se page ke boxes jitna shrink karenge(inspect karna hai ye karne se phele change dekhne ke liye) uske according vo boxes kho adjust kar dega boxes kho page pe usse niche shift karke*/
+    /* flex-basis: 25%;        first 4 ake line me agla dusre line me iske liye wrap on karna hoga */
+    /* agar flex direction column kar diya tho height set hoga isse kyuki axis change hogaya hai na*/
+}
+
+#box-1{
+    /* order:1;    by default all order set to zero ,jiska jyada order vo right side me or can be say as ascending order se arrange kar sakte hai, ==> wase avoid hi kara jata hai kyuki readability nhi rehti hai */
+    /* konsa box phele grow hoga or shrink hoga ye decide kar rahe hai*/
+    flex-grow: 1;       /* BY default:0 ye box grow hoga like jitna bhi space hai usse khud cover kar lega ==> inspect se dekhna hai */
+    /* flex-shrink: 2;     BY default:1  wrap bund karna hoga ye dekhne ke liye ==> shrink 0 matlub bilkul bhi shrink nhi hoga */
+
+    /* flex-basis: 250px;   phele se minimum itna width leke aaye main axis ke across , bakki sub kho comment kara hai change dekhne ke liye */
+
+}
+
+#box-4{
+    /* flex-grow: 2;           approx double grow hoga box 1 se bhi */
+
+    /*  grow shrink basis ==>sub ake hi line me */ 
+    flex: 0 0 250px;
+    align-self: flex-start;     /* specific child kho kahi karna ho tho like flex-start se box-3 top pe chala jaega */
+}
+
