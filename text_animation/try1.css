@@ -1,0 +1,98 @@
+body{
+    background: black;
+}
+
+.cube div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: linear 3s;
+}
+
+.cube{
+    transition: 3s;
+    transform-style: preserve-3d;
+    animation: spin 5s;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: solid 5px wheat;
+}
+
+.cube div:nth-child(1){
+    transform: translate(600px,300px) rotateY(0deg);
+}
+
+.cube:hover div:nth-child(2){
+    transform: translate(600px,200px) rotateX(0deg);
+}
+
+.cube:hover div:nth-child(3){
+    transform: translate(600px,400px) rotateX(0deg);
+}
+
+.cube:hover div:nth-child(4){
+    transform: translate(500px,300px) rotateY(0deg);
+}
+
+.cube:hover div:nth-child(5){
+    transform: translate(700px,300px) rotateY(0deg);
+}
+
+.cube:hover div:nth-child(6){
+    transform: translate(800px,300px) rotateY(0deg);
+}
+
+.cube div:nth-child(5){
+    transform-origin: left;
+    transform: translate(700px,300px) rotateY(-90deg);
+}
+
+.cube div:nth-child(2){
+    transform-origin: bottom;
+    transform: translate(600px,200px) rotateX(-90deg);
+}
+
+.cube div:nth-child(4){
+    transform-origin: right;
+    transform: translate(500px,300px) rotateY(90deg);
+}
+
+.cube div:nth-child(3){
+    transform-origin: top;
+    transform: translate(600px,400px) rotateX(90deg);
+}
+
+.cube div:nth-child(6){
+    transform-origin: left;
+    transform: translate(700px,300px) translateZ(100px) rotateY(-180deg);
+}
+
+@keyframes spin{
+    0%{
+        transform: translate(100px,50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }
+    30%{
+        transform: translate(600px,50px) rotateY(90deg) rotateX(50deg) rotateZ(20deg);
+    }
+    60%{
+        transform: translate(1500px,100px) rotateY(180deg) rotateX(30deg) rotateZ(10deg);
+    }
+    100%{
+        transform: translate(100px,50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }
+} 
+/* 
+.cube {
+    animation: ani 5s ease-in-out infinite;
+}
+
+@keyframes ani {
+    50% {
+        transform: rotateY(90deg) rotateX(90deg) scale3d(.5, .5, .5)
+    }
+
+    100% {
+        transform: rotateY(180deg) rotateX(180deg)
+    }
+}  */
